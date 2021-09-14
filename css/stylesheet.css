@@ -33,19 +33,11 @@ section {
 /* -------------------------------------*/
 
 header {
-  background-color: rgb(155, 132, 132);
+  background-color: rgb(39, 39, 39);
   background-size: cover;
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
-}
-
-.hero-text-box {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .logo-black {
@@ -150,12 +142,14 @@ header {
 /* HEADINGS */
 /* -------------------------------------*/
 h1 {
-  justify-content: right;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
   color: whitesmoke;
   font-size: 600%;
-  margin-top: 200px;
   word-spacing: 4px;
   letter-spacing: 1px;
+  margin: 0;
 }
 
 h2 {
