@@ -2,13 +2,21 @@
 /* BASIC SETUP */
 /* -------------------------------------*/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
+  background-color: #fff;
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
 
 body {
   font-family: "Lato", "Arial", sans-serif;
+  font-size: 20px;
 }
 
 p {
@@ -25,7 +33,7 @@ section {
 /* -------------------------------------*/
 
 header {
-  background-color: black;
+  background-color: rgb(155, 132, 132);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -34,7 +42,10 @@ header {
 
 .hero-text-box {
   position: absolute;
-  justify-content: center;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .logo-black {
@@ -43,7 +54,40 @@ header {
   float: left;
   margin: 5px 0;
 }
+/*.....................................*/
+/* SECTION WOOD */
+/* -------------------------------------*/
+.section-wood {
+  background-image: url(../images/woodtexturebackground.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
 
+/*.....................................*/
+/* SECTION GLASS */
+/* -------------------------------------*/
+.section-glass {
+  background-image: url(../images/glassimage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+/*.....................................*/
+/* SECTION CERAMIC */
+/* -------------------------------------*/
+.section-ceramic {
+  background-image: url(../images/ceramicimage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  margin: 0;
+}
 /*.....................................*/
 /* MAIN NAVIGATION */
 /* -------------------------------------*/
@@ -100,45 +144,6 @@ header {
 
 .sticky .logo-black {
   display: block;
-}
-
-/*.....................................*/
-/* SECTION WOOD */
-/* -------------------------------------*/
-.section-wood {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/woodtexturebackground.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  background-attachment: fixed;
-  margin: 0;
-}
-
-/*.....................................*/
-/* SECTION GLASS */
-/* -------------------------------------*/
-.section-glass {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/glassimage.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  background-attachment: fixed;
-  margin: 0;
-}
-
-/*.....................................*/
-/* SECTION CERAMIC */
-/* -------------------------------------*/
-.section-ceramic {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/ceramicimage.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  background-attachment: fixed;
-  margin: 0;
 }
 
 /*.....................................*/
