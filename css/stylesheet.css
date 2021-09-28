@@ -2,12 +2,6 @@
 /* BASIC SETUP */
 /* -------------------------------------*/
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html {
   background-color: #fff;
   font-size: 20px;
@@ -44,11 +38,26 @@ header {
   height: 100px;
   width: auto;
   float: left;
-  margin: 5px 0;
+  margin: 2vh 2vh;
 }
-/*.....................................*/
+
+/*...................
+..................*/
+/* SECTION HERO*/
+/* -------------------------------------*/
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+/*...................
+..................*/
 /* SECTION WOOD */
 /* -------------------------------------*/
+
 .section-wood {
   background-image: url(../images/woodtexturebackground.jpg);
   background-size: cover;
@@ -144,9 +153,8 @@ header {
 h1 {
   display: flex;
   justify-content: center;
-  justify-items: center;
   color: whitesmoke;
-  font-size: 600%;
+  font-size: 700%;
   word-spacing: 4px;
   letter-spacing: 1px;
   margin: 0;
