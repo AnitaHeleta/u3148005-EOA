@@ -48,18 +48,48 @@ header {
 
 .hero-text-box {
   position: absolute;
-  width: 1140px;
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
 }
+
+.search {
+  width: 100%;
+  position: relative;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 70%;
+  padding: 20px 20px 20px 40px;
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+label {
+  color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 100%;
+}
+
+button {
+  background-color: #994b30;
+  color: whitesmoke;
+  padding: 8px 8px 8px 8px;
+  border-radius: 100px;
+  border: 1px solid #994b30;
+  cursor: pointer;
+}
+
 /*...................
 ..................*/
 /* SECTION WOOD */
 /* -------------------------------------*/
 
 .section-wood {
-  background-image: url(../images/woodtexturebackground.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/woodtexturebackground.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -70,7 +100,8 @@ header {
 /* SECTION GLASS */
 /* -------------------------------------*/
 .section-glass {
-  background-image: url(../images/glassimage.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/glassimage.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -82,7 +113,8 @@ header {
 /* SECTION CERAMIC */
 /* -------------------------------------*/
 .section-ceramic {
-  background-image: url(../images/ceramicimage.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/ceramicimage.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -120,7 +152,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-  border-bottom: 2px solid #e67e22;
+  border-bottom: 2px solid #996a30;
 }
 /*.....................................*/
 /* STICKY NAV */
@@ -143,10 +175,6 @@ header {
   color: whitesmoke;
 }
 
-.sticky .logo-black {
-  display: block;
-}
-
 /*.....................................*/
 /* HEADINGS */
 /* -------------------------------------*/
@@ -155,8 +183,6 @@ h1 {
   justify-content: center;
   color: whitesmoke;
   font-size: 700%;
-  word-spacing: 4px;
-  letter-spacing: 1px;
   margin: 0;
 }
 
@@ -167,4 +193,11 @@ h2 {
   font-size: 350%;
   text-align: center;
   margin: auto;
+  font-size: 500%;
+  letter-spacing: 0.5vh;
+  padding-top: 40vh;
 }
+
+/*.....................................*/
+/* BURGER MENU */
+/* -------------------------------------*/
