@@ -14,6 +14,12 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
     <link rel="stylesheet" type="text/css" href="./css/vendors/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/css/vendors/grid.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -73,8 +79,10 @@
       </div>
     </header>
          <section class="description">
-      <p class="note">A collection of visual components of colour, form, <br>line, shape, space, texture, and value.</p>
+      <p class="note">A collection of visual components of colour, form, line, shape, space, texture, and value.</p>
+      <div id="mapid"></div>
     </section>
+    
     <section id="wood" class="section-wood">
       <h2>Wood</h2>
     </section>

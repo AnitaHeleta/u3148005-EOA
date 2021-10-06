@@ -89,28 +89,23 @@ button {
 /* -------------------------------------*/
 
 .description {
-  text-align: left;
   color: #994830;
   background: whitesmoke;
   background-position: center;
   background-attachment: fixed;
-  padding: 50px;
   text-align: center;
-}
-
-.note {
-  font-size: 150%;
-  margin: 0;
+  padding: 30px 300px 30px 300px;
 }
 
 .note {
   position: relative;
-  width: 30%;
-  padding: 1em 1.5em;
+  width: 50%;
+  padding: 1em 1em;
   margin: 2em auto;
   color: #fff;
   background: #100400;
   overflow: hidden;
+  font-size: 150%;
 }
 
 .note:before {
@@ -141,6 +136,14 @@ button {
   border-color: #fff #fff transparent transparent;
   -moz-border-radius: 0 0 0 5px;
   border-radius: 0 0 0 5px;
+}
+
+/*.....................................*/
+/* MAP  */
+/* -------------------------------------*/
+
+#mapid {
+  height: 500px;
 }
 /*...................
 ..................*/
@@ -188,7 +191,7 @@ button {
 
 footer {
   background-color: rgb(39, 39, 39);
-  padding: 60px;
+  padding: 10px;
   font-size: 80%;
 }
 
