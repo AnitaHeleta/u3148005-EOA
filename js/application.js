@@ -54,4 +54,10 @@ $(document).ready(function () {
       accessToken: "your.mapbox.access.token",
     }
   ).addTo(mymap);
+  var waypoint = new Waypoint({
+    element: document.getElementById("basic-waypoint"),
+    handler: function () {
+      notify("Basic waypoint triggered");
+    },
+  });
 });

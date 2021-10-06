@@ -143,7 +143,7 @@ button {
 /* -------------------------------------*/
 
 #mapid {
-  height: 500px;
+  height: 350px;
 }
 /*...................
 ..................*/
@@ -157,6 +157,7 @@ button {
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
+  margin: 0px;
 }
 
 /*.....................................*/
@@ -169,7 +170,7 @@ button {
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
-  margin: 0;
+  margin: 0px;
 }
 
 /*.....................................*/
@@ -182,7 +183,7 @@ button {
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
-  margin: 0;
+  margin: 0px;
 }
 
 /*.....................................*/

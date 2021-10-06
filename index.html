@@ -2,43 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Elements of Art is a WebApplication displaying objects from the National Museum of Australia made from wood glass and ceramic"
     />
-
-  <head>
     <link
       href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic"
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
+
     <link rel="stylesheet" type="text/css" href="./css/vendors/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/css/vendors/grid.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"
     ></script>
     <script src="./js/application.js"></script>
+    <script src="/path/to/noframework.waypoints.min.js"></script>
     <title>Elements of Art</title>
   </head>
   <body>
     <header>
       <div class="row">
-       <a href="index.html"> <img
-          src="./images/National-Museum-of-Australia-Logo-Font.jpg"
-          alt="National-Museum-of-Australia-Logo-Font"
-          class="logo-black"
+        <a href="index.html">
+          <img
+            src="./images/National-Museum-of-Australia-Logo-Font.jpg"
+            alt="National-Museum-of-Australia-Logo-Font"
+            class="logo-black"
         /></a>
       </div>
       <nav id="menu-bar">
@@ -56,9 +64,9 @@
       </nav>
       <div class="menu-bg" id="menu-bg"></div>
       <div class="hero-text-box">
-        <h1>The<br>Elements<br>of Art</h1>
-       
-         <input
+        <h1>The<br />Elements<br />of Art</h1>
+
+        <input
           type="text"
           id="myInput"
           class="search"
@@ -78,15 +86,18 @@
         <button onclick="findNearMe()">find near me</button>
       </div>
     </header>
-         <section class="description">
-      <p class="note">A collection of visual components of colour, form, line, shape, space, texture, and value.</p>
+    <section class="description">
+      <p class="note">
+        A collection of visual components of colour, form, line, shape, space,
+        texture, and value.
+      </p>
       <div id="mapid"></div>
     </section>
-    
+
     <section id="wood" class="section-wood">
       <h2>Wood</h2>
     </section>
-     <section id="glass" class="section-glass">
+    <section id="glass" class="section-glass">
       <h2>Glass</h2>
     </section>
     <section id="ceramic" class="section-ceramic">
@@ -110,20 +121,18 @@
             <li>
               <a href="#" class="fa fa-twitter"></a>
             </li>
-                
           </ul>
         </div>
       </div>
-    
+
       <div>
         <p id="reference">
           This webpage was created for the course "Designed and Developed by
           Anita Heleta - University of Canberra.
         </p>
       </div>
-      
     </footer>
-<!-- 
+    <!-- 
     <h3>Title</h3>
     <p class="title"></p>
     <h3>Collection</h3>
@@ -136,7 +145,5 @@
     <p class="contributor"></p>
     <h3>Time Period</h3>
     <p class="temporal"></p> -->
-
-  
   </body>
 </html>
