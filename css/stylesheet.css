@@ -55,7 +55,7 @@ header {
 }
 
 .search {
-  width: 100%;
+  width: 80%;
   position: relative;
   font-weight: lighter;
   font-style: italic;
@@ -88,19 +88,59 @@ button {
 /* SECTION DESCRPTION OF WEBSITE*/
 /* -------------------------------------*/
 
-.section-descrption {
-  background-size: cover;
-  height: 100vh;
-}
 .description {
-  text-align: center;
+  text-align: left;
   color: #994830;
-  background-color: whitesmoke;
+  background: whitesmoke;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px;
+  text-align: center;
 }
 
-p.description {
-  font-size: 300%;
+.note {
+  font-size: 150%;
   margin: 0;
+}
+
+.note {
+  position: relative;
+  width: 30%;
+  padding: 1em 1.5em;
+  margin: 2em auto;
+  color: #fff;
+  background: #481200;
+  overflow: hidden;
+}
+
+.note:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 16px 16px 0;
+  border-style: solid;
+  border-color: #fff #fff #994b30 #994b30;
+  background: #994b30;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
+    -1px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  /* Firefox 3.0 damage limitation */
+  display: block;
+  width: 0;
+}
+
+.note.rounded {
+  -moz-border-radius: 5px 0 5px 5px;
+  border-radius: 5px 0 5px 5px;
+}
+
+.note.rounded:before {
+  border-width: 8px;
+  border-color: #fff #fff transparent transparent;
+  -moz-border-radius: 0 0 0 5px;
+  border-radius: 0 0 0 5px;
 }
 /*...................
 ..................*/
@@ -183,8 +223,8 @@ footer {
 p#reference {
   color: whitesmoke;
   font-size: 80%;
-  padding: 20px;
-  text-align: center;
+  padding-top: 90px;
+  text-align: right;
 }
 
 .footer-nav {
