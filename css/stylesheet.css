@@ -27,7 +27,7 @@ section {
 /* -------------------------------------*/
 
 header {
-  background-color: rgb(39, 39, 39);
+  background-color: #100400;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -109,7 +109,7 @@ button {
   padding: 1em 1.5em;
   margin: 2em auto;
   color: #fff;
-  background: #481200;
+  background: #100400;
   overflow: hidden;
 }
 
