@@ -1,12 +1,11 @@
 var map;
-
 function onClickMenu() {
   document.getElementById("menu").classList.toggle("change");
   document.getElementById("nav").classList.toggle("change");
   document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
-function displayData(apiData) {
+function displayData(apiData, i) {
   if (apiData.data.length === 0) {
     clearAll();
     $(".item-container").append("<p>No Results found</p>");
@@ -18,8 +17,8 @@ function displayData(apiData) {
     $(".item-container").append(section);
   }
 
-  if (apiData.links && apiData.links.next) {
-    loadDataFrom(apiData.links.next);
+  if (i < 1 && apiData.links && apiData.links.next) {
+    loadDataFrom(apiData.links.next, i + 1);
   }
 }
 
@@ -32,19 +31,18 @@ function buildSection(results) {
 
 function buildIndividualResult(r) {
   var item = $(`<div class="col span-1-of-4 box">
-            <h3>Title</h3>
-            <p class="result-title" >${r.title}</p>
-            <h3> Description</h3>
+            <h3 class="result-title">${r.title}</h2>
+            <h4> Description</h4>
             <p class="physdesc">${r.physicalDescription}</p>
-            <h3>Type</h3>
+            <h4>Type</h4>
             <p class="type">${r.additionalType}</p>
-            <h3>Collection</h3>
+            <h4>Collection</h4>
             <p class="collection"> ${r.collection.title}</p>
         </div>`);
 
   var endDate = extractEndDate(r);
   if (endDate) {
-    item.append("<h3>Period</h3> <p class='period'>" + endDate + "</p>");
+    item.append("<h4>Period</h4> <p class='period'>" + endDate + "</p>");
   }
   var thumbnail = extractThumbnail(r);
   if (thumbnail) {
@@ -102,9 +100,12 @@ function extractThumbnail(row) {
   return undefined;
 }
 
-function loadDataFrom(path) {
+function loadDataFrom(path, i = 0) {
   var searchUrl = "https://data.nma.gov.au/" + path;
-  $.getJSON(searchUrl, displayData);
+  $.getJSON(searchUrl, (d) => displayData(d, i));
+  document
+    .querySelector(".item-container")
+    .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 }
 
 function searchByTitle(query) {
@@ -152,7 +153,7 @@ function clearAll() {
 }
 
 function getObjectPath(query) {
-  return `object?limit=51&format=simple&apikey=4SDwv6pd4DyiBrJ5xu2PnVUmaLhIogIk&${query}`;
+  return `object?limit=16&format=simple&apikey=4SDwv6pd4DyiBrJ5xu2PnVUmaLhIogIk&${query}`;
 }
 
 function getLocationName(lat, long) {
@@ -179,8 +180,8 @@ function findNearMe() {
 
 function performSearch(searchQuery) {
   var searchBy = $("input[name='searchBy']:checked").val();
-  if (searchBy === "title") {
-    searchByTitle(searchQuery);
+  if (searchBy === "material") {
+    searchByMedium(searchQuery);
   } else if (searchBy === "collection") {
     searchByCollection(searchQuery);
   }

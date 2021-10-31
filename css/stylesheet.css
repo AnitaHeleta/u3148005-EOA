@@ -310,8 +310,8 @@ h3 {
 /* -------------------------------------*/
 
 #menu {
-  width: 35px;
-  height: 30px;
+  width: 25px;
+  height: 20px;
   margin: 30px 30px 30px 30px;
   cursor: pointer;
 }
@@ -396,4 +396,28 @@ p.type,
 p.collection,
 p.period {
   font-size: 1vw;
+}
+
+h3.result-title {
+  color: rgb(134, 133, 133);
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 130%;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+h3.result-title:after {
+  display: none;
+}
+
+h4 {
+  color: #ba5e0b;
+  font-size: 100%;
+  font-weight: 400;
+  opacity: 70%;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
