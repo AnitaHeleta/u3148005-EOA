@@ -99,7 +99,7 @@ button {
 
 .note {
   position: relative;
-  width: 50%;
+  width: auto;
   padding: 1em 1em;
   margin: 2em auto;
   color: #fff;
