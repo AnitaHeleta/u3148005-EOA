@@ -32,18 +32,19 @@ function buildSection(results) {
 
 function buildIndividualResult(r) {
   var item = $(`<div class="col span-1-of-4 box">
+            <h3>Title</h3>
             <p class="result-title" >${r.title}</p>
-            <p> Description</p>
+            <h3> Description</h3>
             <p class="physdesc">${r.physicalDescription}</p>
-            <p>Type</p>
+            <h3>Type</h3>
             <p class="type">${r.additionalType}</p>
-            <p>Collection</p>
+            <h3>Collection</h3>
             <p class="collection"> ${r.collection.title}</p>
         </div>`);
 
   var endDate = extractEndDate(r);
   if (endDate) {
-    item.append("<h3>Period</h3> <p>" + endDate + "</p>");
+    item.append("<h3>Period</h3> <p class='period'>" + endDate + "</p>");
   }
   var thumbnail = extractThumbnail(r);
   if (thumbnail) {
