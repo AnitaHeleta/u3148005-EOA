@@ -83,9 +83,6 @@ button {
   cursor: pointer;
 }
 
-button .btn btn-homepage {
-  color: #55acee;
-}
 /*...................
 ..................*/
 /* SECTION DESCRPTION OF WEBSITE*/
@@ -197,35 +194,6 @@ footer {
   background-color: rgb(39, 39, 39);
   padding: 10px;
   font-size: 80%;
-}
-
-/* Style all font awesome icons */
-.fab {
-  padding: 20px;
-  font-size: 20px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 20%;
-}
-
-/* Add a hover effect if you want */
-.fab:hover {
-  opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-  background: #55acee;
-  color: white;
 }
 
 p#reference {
