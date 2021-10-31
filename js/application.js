@@ -31,7 +31,7 @@ function buildSection(results) {
 
 function buildIndividualResult(r) {
   var item = $(`<div class="col span-1-of-4 box">
-            <h3 class="result-title">${r.title}</h2>
+            <h3 class="result-title">${r.title}</h3>
             <h4> Description</h4>
             <p class="physdesc">${r.physicalDescription}</p>
             <h4>Type</h4>

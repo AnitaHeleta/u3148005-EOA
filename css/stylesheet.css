@@ -300,11 +300,6 @@ h2:hover {
   transition: 0.5s ease;
 }
 
-h3 {
-  color: #994b30;
-  font-size: 1.1vw;
-}
-
 /*.....................................*/
 /* BURGER MENU */
 /* -------------------------------------*/
@@ -396,10 +391,12 @@ p.type,
 p.collection,
 p.period {
   font-size: 1vw;
+  line-height: 1.5vw;
+  color: darkgrey;
 }
 
 h3.result-title {
-  color: rgb(134, 133, 133);
+  color: #400015;
   text-transform: capitalize;
   font-weight: 400;
   font-size: 130%;
@@ -413,7 +410,7 @@ h3.result-title:after {
 }
 
 h4 {
-  color: #ba5e0b;
+  color: #482800;
   font-size: 100%;
   font-weight: 400;
   opacity: 70%;
