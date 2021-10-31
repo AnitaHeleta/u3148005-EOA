@@ -418,3 +418,19 @@ h4 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/*.....................................*/
+/* COLUMN DISPLAY */
+/* -------------------------------------*/
+.span-1-of-4 {
+  border: solid 0.2vw #482800;
+  background-color: #996a30;
+  margin: 0.5vw;
+  margin-top: 0;
+  padding: 0.5vw;
+  display: grid;
+}
+
+.item-container {
+  background-color: #a72a49;
+}
