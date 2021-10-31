@@ -196,15 +196,15 @@ function fetchGeoLocation() {
 
 function setupSuggestionForSearch() {
   var suggestions = [
-    { value: "Tennis", data: "tennis" },
-    { value: "Canoe", data: "canoe" },
-    { value: "Aboriginal", data: "aboriginal" },
-    { value: "Indigenous", data: "indigenous" },
-    { value: "Torres Strait Islander", data: "torres strait islander" },
-    { value: "Bark", data: "bark" },
-    { value: "Dreaming", data: "dreaming" },
-    { value: "Boomerang", data: "boomerang" },
-    { value: "Lizard", data: "lizard" },
+    { value: "Wood", data: "wood" },
+    { value: "Glass", data: "glass" },
+    { value: "Ceramic", data: "ceramic" },
+    { value: "vase", data: "vase" },
+    { value: "Lense", data: "lense" },
+    { value: "Boomarang", data: "boomarang" },
+    { value: "Carved", data: "carved" },
+    { value: "Plate", data: "plate" },
+    { value: "Doll", data: "doll" },
   ];
 
   $("#myInput").autocomplete({

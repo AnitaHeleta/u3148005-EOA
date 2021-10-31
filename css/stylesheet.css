@@ -34,6 +34,7 @@ header {
   width: auto;
   float: left;
   margin: 2vh 2vh;
+  position: fixed;
 }
 
 /*...................
@@ -188,15 +189,6 @@ footer {
   background-color: rgb(39, 39, 39);
   padding: 10px;
   font-size: 80%;
-}
-
-/* Style all font awesome icons */
-.fa {
-  padding: 2.5vw;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
 }
 
 /* Add a hover effect if you want */
