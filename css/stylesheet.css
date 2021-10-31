@@ -55,8 +55,8 @@ header {
 }
 
 .search {
-  width: 80%;
   position: relative;
+  width: 80%;
   font-weight: lighter;
   font-style: italic;
   font-size: 70%;
@@ -83,6 +83,9 @@ button {
   cursor: pointer;
 }
 
+button .btn btn-homepage {
+  color: #55acee;
+}
 /*...................
 ..................*/
 /* SECTION DESCRPTION OF WEBSITE*/
