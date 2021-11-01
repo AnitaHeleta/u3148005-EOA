@@ -13,8 +13,8 @@ function displayData(apiData, i) {
   }
   var chunkedResults = _.chunk(apiData.data, 4);
   for (const resultsChunk of chunkedResults) {
-    var section = buildSection(resultsChunk);
-    $(".item-container").append(section);
+    var items = buildSection(resultsChunk);
+    $(".item-container").append(items);
   }
 
   if (i < 1 && apiData.links && apiData.links.next) {
@@ -23,14 +23,14 @@ function displayData(apiData, i) {
 }
 
 function buildSection(results) {
-  var s = $('<div class="section">');
+  // var s = $('<div class="section">');
   var items = _.map(results, buildIndividualResult);
-  s.append(items);
-  return s;
+  // s.append(items);
+  return items;
 }
 
 function buildIndividualResult(r) {
-  var item = $(`<div class="col span-1-of-4 box">
+  var item = $(`<div class="col span-4-of-7 box">
             <h3 class="result-title">${r.title}</h3>
             <h4> Description</h4>
             <p class="physdesc">${r.physicalDescription}</p>
