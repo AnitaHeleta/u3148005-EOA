@@ -340,12 +340,13 @@ h4 {
 /* COLUMN DISPLAY */
 /* -------------------------------------*/
 .span-4-of-7 {
-  border: solid 0.2vw #872a49;
-  margin: 0.5vw;
+  border: solid 3px #872a49;
+  margin: 0.9vw;
   padding: 1.5vw;
   margin-top: 0;
-  display: grid;
-  margin-left: 0;
+}
+div.col.span-4-of-7.box {
+  margin-left: 258px;
 }
 
 .item-container {
