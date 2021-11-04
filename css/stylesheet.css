@@ -84,11 +84,10 @@ button {
 
 .description {
   color: #994830;
-  background: whitesmoke;
   background-position: center;
   background-attachment: fixed;
+  margin: 10vh;
   text-align: center;
-  padding: 30px 300px 30px 300px;
 }
 
 .note {
@@ -96,7 +95,9 @@ button {
   width: auto;
   padding: 1em 1em;
   margin: 2em auto;
-  color: #fff;
+  color: rgb(241, 238, 238);
+  text-transform: uppercase;
+  line-height: 2vw;
   background: #24000c;
   overflow: hidden;
   font-size: 150%;
@@ -300,6 +301,56 @@ h2:hover {
   transition: 0.5s ease;
 }
 
+p.result-title,
+p.physdesc,
+p.type,
+p.collection,
+p.period {
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+  color: whitesmoke;
+}
+
+h3.result-title {
+  color: #996a30;
+  font-weight: 500;
+  font-size: 3.2vw;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+h3.result-title:after {
+  display: none;
+}
+
+h4 {
+  color: #a72849;
+  font-size: 2vw;
+  font-weight: 400;
+  opacity: 70%;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*.....................................*/
+/* COLUMN DISPLAY */
+/* -------------------------------------*/
+.span-4-of-7 {
+  border: solid 0.2vw #872a49;
+  margin: 0.5vw;
+  padding: 1.5vw;
+  margin-top: 0;
+  display: grid;
+  margin-left: 0;
+}
+
+.item-container {
+  background-color: #24000c;
+  display: flexbox;
+}
+
 /*.....................................*/
 /* BURGER MENU */
 /* -------------------------------------*/
@@ -383,54 +434,4 @@ h2:hover {
 }
 .change {
   display: block;
-}
-
-p.result-title,
-p.physdesc,
-p.type,
-p.collection,
-p.period {
-  font-size: 1.2vw;
-  line-height: 1.8vw;
-  color: whitesmoke;
-}
-
-h3.result-title {
-  color: #996a30;
-  font-weight: 500;
-  font-size: 3.2vw;
-  text-align: left;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-h3.result-title:after {
-  display: none;
-}
-
-h4 {
-  color: #a72849;
-  font-size: 2vw;
-  font-weight: 400;
-  opacity: 70%;
-  text-transform: capitalize;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/*.....................................*/
-/* COLUMN DISPLAY */
-/* -------------------------------------*/
-.span-4-of-7 {
-  border: solid 0.2vw #872a49;
-  margin: 0.5vw;
-  padding: 1.5vw;
-  margin-top: 0;
-  display: grid;
-  margin-left: 0;
-}
-
-.item-container {
-  background-color: #24000c;
-  display: flexbox;
 }
