@@ -30,9 +30,6 @@
     letter-spacing: 0.5vw;
   }
 
-  h2 {
-    padding-top: 50vw;
-  }
   .note {
     line-height: 4vw;
     font-size: 80%;
@@ -83,11 +80,9 @@
   #mapid {
     height: 200px;
   }
-
   h2 {
-    padding-top: 50vw;
+    padding-top: 40vh;
   }
-
   .note {
     line-height: 4vw;
     font-size: 80%;
@@ -135,5 +130,28 @@
 
   p#reference {
     font-size: 1.5vw;
+  }
+
+  #menu {
+    margin-right: 8px;
+  }
+
+  .change-bg {
+    height: 330px;
+  }
+}
+
+/* Small phones to small tablets: from 0px to 481px */
+@media only screen and (max-width: 1200px) {
+  .change-bg {
+    height: 180px;
+  }
+
+  .search {
+    width: 70%;
+    font-size: 45%;
+    padding: 5px 20px 20px 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 }
