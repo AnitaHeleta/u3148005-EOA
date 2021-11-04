@@ -5,17 +5,23 @@
     padding-top: 2vw;
   }
 
+  h2 {
+    padding-top: 20vw;
+  }
+
   h2:hover {
     color: #a72a49;
     cursor: pointer;
     transition: 0.5s ease;
   }
+  .fa:hover {
+    opacity: 0.7;
+  }
+}
+/* I want to place the menu and logo on top of the section */
 
-  /* I want to place the menu and logo on top of the section */
-
-  /* Small tablet to big tablet: from 768px to 1023px
-@media screen and (max-width: 1023px)  */
-
+/* smalltablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
   h1 {
     font-size: 12vw;
     padding-top: 2vw;
@@ -24,6 +30,9 @@
     letter-spacing: 0.5vw;
   }
 
+  h2 {
+    padding-top: 50vw;
+  }
   .note {
     line-height: 4vw;
     font-size: 80%;
@@ -64,15 +73,19 @@
     cursor: pointer;
     transition: 0.5s ease;
   }
+  .fa:hover {
+    opacity: 0.7;
+  }
 }
 
 /* Small phones to small tablets: from 481px to 767px */
-@media only screen and(max-width: 1200px) {
-  h1 {
-    font-size: 12vw;
-    padding-top: 2vw;
-    line-height: 12vw;
-    margin-left: 23px;
+@media only screen and (max-width: 1200px) {
+  #mapid {
+    height: 200px;
+  }
+
+  h2 {
+    padding-top: 50vw;
   }
 
   .note {
@@ -90,10 +103,6 @@
     margin-right: 8px;
   }
 
-  #mapid {
-    height: 250px;
-  }
-
   .search {
     margin-left: 23px;
     margin-bottom: 0px;
@@ -106,10 +115,9 @@
 
   button {
     font-size: 70%;
-    position: absolute;
-    display: inherit;
     margin-left: 23px;
     margin-top: 15px;
+    position: initial;
   }
 
   input#title {
@@ -129,6 +137,3 @@
     font-size: 1.5vw;
   }
 }
-
-/* Small phones:from 0 to 480px */
-/* @media only screen and (max-width: 480px)  */

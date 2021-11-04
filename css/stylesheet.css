@@ -30,7 +30,8 @@ header {
 }
 
 .logo-black {
-  width: 5%;
+  z-index: 100;
+  width: 4%;
   height: auto;
   margin: 2vh 2vh;
   position: fixed;
@@ -97,7 +98,7 @@ button {
   margin: 2em auto;
   color: rgb(241, 238, 238);
   text-transform: uppercase;
-  line-height: 2vw;
+  line-height: 3vw;
   background: #24000c;
   overflow: hidden;
   font-size: 150%;
@@ -139,6 +140,7 @@ button {
 
 #mapid {
   height: 500px;
+  z-index: 0;
 }
 /*...................
 ..................*/
