@@ -17,20 +17,23 @@
   .fa:hover {
     opacity: 0.7;
   }
+
+  p.note {
+    font-size: 100%;
+  }
 }
-/* I want to place the menu and logo on top of the section */
 
 /* smalltablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
   h1 {
-    font-size: 12vw;
+    font-size: 9vw;
     padding-top: 2vw;
     line-height: 12vw;
     margin-left: 23px;
     letter-spacing: 0.5vw;
   }
 
-  .note {
+  p.note {
     line-height: 4vw;
     font-size: 80%;
   }
@@ -72,6 +75,10 @@
   }
   .fa:hover {
     opacity: 0.7;
+  }
+
+  div.col.span-4-of-7.box {
+    margin-left: 150px;
   }
 }
 
@@ -139,19 +146,33 @@
   .change-bg {
     height: 330px;
   }
-}
 
-/* Small phones to small tablets: from 0px to 481px */
-@media only screen and (max-width: 1200px) {
-  .change-bg {
-    height: 180px;
+  p.result-title,
+  p.physdesc,
+  p.type,
+  p.collection,
+  p.period {
+    font-size: 2vw;
+    line-height: 3vw;
   }
 
-  .search {
-    width: 70%;
-    font-size: 45%;
-    padding: 5px 20px 20px 10px;
-    margin-top: 20px;
+  h3.result-title {
+    color: #996a30;
+    font-weight: 500;
+    font-size: 3.5vw;
     margin-bottom: 30px;
+  }
+
+  h3.result-title:after {
+    display: none;
+  }
+
+  h4 {
+    color: #a72849;
+    font-size: 2.5vw;
+    font-weight: 400;
+    opacity: 70%;
+    text-transform: capitalize;
+    margin-bottom: 10px;
   }
 }

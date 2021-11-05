@@ -308,9 +308,9 @@ p.physdesc,
 p.type,
 p.collection,
 p.period {
-  font-size: 1.2vw;
-  line-height: 1.8vw;
-  color: whitesmoke;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  color: #faf9f6;
 }
 
 h3.result-title {
@@ -441,4 +441,13 @@ div.col.span-4-of-7.box {
 }
 .change {
   display: block;
+}
+
+/*.....................................*/
+/*IMAGES */
+/* -------------------------------------*/
+
+.thumbnail {
+  border: 0.3vw solid #996a30;
+  padding: 2vw;
 }
