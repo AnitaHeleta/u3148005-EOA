@@ -217,4 +217,8 @@
   div.col.span-4-of-7.box {
     margin-left: 90px;
   }
+
+  .change-bg {
+    height: 188px;
+  }
 }

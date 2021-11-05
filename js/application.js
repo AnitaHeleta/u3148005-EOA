@@ -153,7 +153,7 @@ function clearAll() {
 }
 
 function getObjectPath(query) {
-  return `object?limit=30&format=simple&apikey=4SDwv6pd4DyiBrJ5xu2PnVUmaLhIogIk&${query}`;
+  return `object?limit=500&format=simple&apikey=4SDwv6pd4DyiBrJ5xu2PnVUmaLhIogIk&${query}`;
 }
 
 function getLocationName(lat, long) {
