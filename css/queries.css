@@ -24,6 +24,36 @@
   div.col.span-4-of-7.box {
     margin-left: 200px;
   }
+
+  p.result-title,
+  p.physdesc,
+  p.type,
+  p.collection,
+  p.period {
+    font-size: 1.8vw;
+    line-height: 2.5vw;
+  }
+
+  h3.result-title {
+    margin-bottom: 40px;
+  }
+
+  h3.result-title {
+    color: #996a30;
+    font-weight: 500;
+    font-size: 4vw;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 2.5vw;
+    font-weight: 400;
+    opacity: 70%;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 /* smalltablet to big tablet: from 768px to 1023px */
@@ -71,6 +101,9 @@
     font-size: 1.5vw;
   }
 
+  h2 {
+    font-size: 12vw;
+  }
   h2:hover {
     color: #a72a49;
     cursor: pointer;
@@ -78,6 +111,38 @@
   }
   .fa:hover {
     opacity: 0.7;
+  }
+
+  p.result-title,
+  p.physdesc,
+  p.type,
+  p.collection,
+  p.period {
+    font-size: 2.5vw;
+    line-height: 4vw;
+    color: #faf9f6;
+  }
+
+  h3.result-title {
+    color: #996a30;
+    font-weight: 500;
+    font-size: 4.5vw;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    color: #a72849;
+    font-size: 3.5vw;
+    font-weight: 400;
+    opacity: 70%;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  div.col.span-4-of-7.box {
+    margin-left: 180px;
   }
 }
 
