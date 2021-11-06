@@ -152,6 +152,11 @@
   #mapid {
     height: 200px;
   }
+
+  h1 {
+    font-size: 12vw;
+  }
+
   h2 {
     padding-top: 40vh;
   }
