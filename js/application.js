@@ -8,7 +8,7 @@ function onClickMenu() {
 function displayData(apiData, i) {
   if (apiData.data.length === 0) {
     clearAll();
-    $(".item-container").append("<p>No Results found</p>");
+    $(".item-container").append("<p class='no-results'> No Results found</p>");
     return;
   }
   var chunkedResults = _.chunk(apiData.data, 4);

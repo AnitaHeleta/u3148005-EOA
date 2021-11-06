@@ -451,3 +451,35 @@ div.col.span-4-of-7.box {
   border: 0.3vw solid #996a30;
   padding: 2vw;
 }
+
+/* -------------------------------------*/
+/* AUTOCOMPLETE SUGGESTIONS */
+/* -------------------------------------*/
+
+.autocomplete-suggestions {
+  background: #a72a49;
+  overflow: auto;
+  border-radius: 8px;
+}
+.autocomplete-suggestion {
+  padding: 2px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.autocomplete-selected {
+  background: #996a30;
+}
+.autocomplete-suggestions strong {
+  color: #24000c;
+}
+.autocomplete-group {
+  padding: 4px 5px;
+}
+.autocomplete-group strong {
+  display: block;
+  border-bottom: 0.5px solid #fff;
+}
+
+.no-results {
+  color: whitesmoke;
+}
