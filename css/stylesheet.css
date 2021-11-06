@@ -465,12 +465,14 @@ div.col.span-4-of-7.box {
   padding: 2px 5px;
   white-space: nowrap;
   overflow: hidden;
+  color: whitesmoke;
 }
 .autocomplete-selected {
   background: #996a30;
 }
 .autocomplete-suggestions strong {
-  color: #24000c;
+  color: whitesmoke;
+  font-weight: 800;
 }
 .autocomplete-group {
   padding: 4px 5px;
@@ -478,6 +480,7 @@ div.col.span-4-of-7.box {
 .autocomplete-group strong {
   display: block;
   border-bottom: 0.5px solid #fff;
+  color: whitesmoke;
 }
 
 .no-results {
